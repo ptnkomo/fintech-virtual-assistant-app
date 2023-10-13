@@ -66,6 +66,7 @@ if __name__ == "__main__":
 
         fintech_chat_bot = ecApp()
         fintech_chat_bot.online = True
+        st.session_state["IS_BOT_READY"] = True # to remove late
         # ingesting data
         if not st.session_state.get("IS_BOT_READY"):
             with st.spinner('Waiting for data ingestion to complete'):
