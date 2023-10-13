@@ -1,5 +1,7 @@
 """Python file to serve as the frontend"""
+__import__('pysqlite3')
 import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import os
 import time
 
