@@ -1,0 +1,10 @@
+version: '3'
+services:
+  langchain-chat-app:
+    image: fintech-virtual-assistant-app:latest
+    build: ./app
+    command: streamlit run fintech_app/main.py --server.port 8080
+    volumes:
+      - ./fintech_app/:/app/fintech_app
+    ports:
+      - 8080:8080
