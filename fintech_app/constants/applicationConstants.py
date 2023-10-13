@@ -10,7 +10,7 @@ Context: $context
 If you don't know the answer, just say that you don't know, don't try to make up an answer. 
 Use five sentences maximum and keep the answer as concise as possible.
  
-Always say "thanks for asking!, Siyabonga, Twalumba" at the end of the answer. 
+Always say "thanks for asking!, Siyabonga, Dankie, Kea leboha, Twalumba, Tatenda" at the end of the answer. 
 
 Question: $query
 Helpful Answer:""")

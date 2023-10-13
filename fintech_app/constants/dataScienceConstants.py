@@ -1,6 +1,3 @@
-data_science_web_urlsss = ['https://www.onlinemanipal.com/blogs/data-science-use-cases-in-finance']
-
-
 data_science_web_urls = ['https://www.onlinemanipal.com/blogs/data-science-use-cases-in-finance',
                          'https://www.altexsoft.com/blog/datascience/how-to-structure-data-science-team-key-models-and-roles/',
                          'https://www.techtarget.com/searchbusinessanalytics/feature/How-to-structure-and-manage-a-data-science-team/',

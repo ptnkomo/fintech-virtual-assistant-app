@@ -48,7 +48,7 @@ if __name__ == "__main__":
         page_icon="💂‍♂️",
         layout="wide",
         initial_sidebar_state="expanded", )
-    st.header(":orange[AI Software Development Virtual Assistant for Practitioners in FinTechs]  💬")
+    st.header(":orange[💬 AI Software Development Virtual Assistant for Practitioners in FinTechs]")
 
     sidebar()
 

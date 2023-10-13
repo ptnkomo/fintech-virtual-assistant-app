@@ -1,6 +1,3 @@
-machine_learning_web_urlsss = ['https://uk.mobile.reuters.com/business/quotes/overview/AALB.AS']
-
-
 machine_learning_web_urls = ['https://uk.mobile.reuters.com/business/quotes/overview/AALB.AS',
                              'https://www.airswift.com/blog/machine-learning-team',
                              'https://neptune.ai/blog/software-patterns-for-ml',
