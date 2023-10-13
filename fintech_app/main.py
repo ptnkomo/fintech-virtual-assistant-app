@@ -17,7 +17,7 @@ from embedchain.config import LlmConfig
 
 def ingest_training_data():
     web_urls = data_science_web_urls + machine_learning_web_urls + finance_gpt_urls + others_urls
-    with st.spinner('Waiting for data ingestion to complete'):
+    with st.spinner('Loading data ....please wait'):
         for url in web_urls:
             url_ = url
             fintech_chat_bot.add(url_)
@@ -28,7 +28,6 @@ def ingest_training_data():
 def response_embedchain(query):
     """Logic for loading the chain you want to use should go here."""
     llm_config = LlmConfig(template=template, system_prompt="")
-    print(f'Calling response on: {query}')
     response = fintech_chat_bot.query(query, config=llm_config)
     return response
 
@@ -49,7 +48,7 @@ if __name__ == "__main__":
         page_icon="💂‍♂️",
         layout="wide",
         initial_sidebar_state="expanded", )
-    st.header(":orange[AI Software Development Virtual Assistant: Fintechs]  💬")
+    st.header(":orange[AI Software Development Virtual Assistant for Practitioners in FinTechs]  💬")
 
     sidebar()
 
@@ -92,11 +91,8 @@ if __name__ == "__main__":
                 with st.chat_message("assistant"):
                     message_placeholder = st.empty()
                     full_response = ""
-                with st.chat_message("assistant"):
-                    message_placeholder = st.empty()
-                    full_response = ""
 
-                    with st.spinner('Chatbot is thinking of the answer...'):
+                    with st.spinner('Chatbot is thinking of the answer...please wait'):
                         assistant_response = response_embedchain(user_input)
                     # Simulate stream of response with milliseconds delay
                     for chunk in assistant_response.split():
