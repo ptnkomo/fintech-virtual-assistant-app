@@ -2,7 +2,7 @@ from string import Template
 
 persist_directory = 'chroma_db'
 local_training_data_directory = 'local_training_data/'
-OPENAI_API_KEY = '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'
+
 template = Template("""I want you to act as a very senior data scientist or machine learning engineer providing guidance to junior professionals.Please provide detailed answers the question at the end. 
 
 Context: $context
