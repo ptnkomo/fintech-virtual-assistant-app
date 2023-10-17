@@ -1,5 +1,5 @@
 """Python file to serve as the frontend"""
-from embedchain.config import LlmConfig
+
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
@@ -16,7 +16,7 @@ from fintech_app.constants.dataScienceConstants import finance_gpt_urls
 from fintech_app.constants.dataScienceConstants import others_urls
 from fintech_app.constants.machineLearningConstants import machine_learning_web_urls
 from fintech_app.constants.applicationConstants import template
-
+from embedchain.config import BaseLlmConfig
 
 
 def ingest_training_data():
@@ -31,7 +31,7 @@ def ingest_training_data():
 
 def response_embedchain(query):
     """Logic for loading the chain you want to use should go here."""
-    llm_config = LlmConfig(template=template, system_prompt="")
+    llm_config = BaseLlmConfig(template=template, system_prompt="")
     response = fintech_chat_bot.query(query, config=llm_config)
     return response
 
