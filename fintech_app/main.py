@@ -1,4 +1,5 @@
 """Python file to serve as the frontend"""
+from embedchain.config import LlmConfig
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
@@ -8,7 +9,7 @@ import time
 sys.path.append(os.path.abspath('.'))
 
 import streamlit as st
-from embedchain.config import LlmConfig
+
 from fintech_app.components.sidebar import sidebar
 from fintech_app.constants.dataScienceConstants import data_science_web_urls
 from fintech_app.constants.dataScienceConstants import finance_gpt_urls
