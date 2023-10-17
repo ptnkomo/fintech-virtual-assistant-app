@@ -8,13 +8,14 @@ import time
 sys.path.append(os.path.abspath('.'))
 
 import streamlit as st
+from embedchain.config import LlmConfig
 from fintech_app.components.sidebar import sidebar
 from fintech_app.constants.dataScienceConstants import data_science_web_urls
 from fintech_app.constants.dataScienceConstants import finance_gpt_urls
 from fintech_app.constants.dataScienceConstants import others_urls
 from fintech_app.constants.machineLearningConstants import machine_learning_web_urls
 from fintech_app.constants.applicationConstants import template
-from embedchain.config import LlmConfig
+
 
 
 def ingest_training_data():
